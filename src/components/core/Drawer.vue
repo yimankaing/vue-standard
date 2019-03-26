@@ -29,7 +29,7 @@
             />
           </v-list-tile-avatar>
           <v-list-tile-title class="title">
-            Vuetify MD
+            E-Learning
           </v-list-tile-title>
         </v-list-tile>
         <v-divider/>
@@ -56,19 +56,6 @@
           <v-list-tile-title
             v-text="link.text"
           />
-        </v-list-tile>
-        <v-list-tile
-          disabled
-          active-class="primary"
-          class="v-list-item v-list__tile--buy"
-          to="/upgrade"
-        >
-          <v-list-tile-action>
-            <v-icon>mdi-package-up</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title class="font-weight-light">
-            Upgrade To PRO
-          </v-list-tile-title>
         </v-list-tile>
       </v-layout>
     </v-img>
@@ -101,26 +88,6 @@ export default {
         icon: 'mdi-clipboard-outline',
         text: 'Table List'
       },
-      {
-        to: '/typography',
-        icon: 'mdi-format-font',
-        text: 'Typography'
-      },
-      {
-        to: '/icons',
-        icon: 'mdi-chart-bubble',
-        text: 'Icons'
-      },
-      {
-        to: '/maps',
-        icon: 'mdi-map-marker',
-        text: 'Maps'
-      },
-      {
-        to: '/notifications',
-        icon: 'mdi-bell',
-        text: 'Notifications'
-      }
     ],
     responsive: false
   }),
@@ -134,12 +101,9 @@ export default {
         this.setDrawer(val)
       }
     },
-    items () {
-      return this.$t('Layout.View.items')
-    }
   },
   mounted () {
-    this.onResponsiveInverted()
+    this.onResponsiveInverted();
     window.addEventListener('resize', this.onResponsiveInverted)
   },
   beforeDestroy () {
@@ -148,11 +112,7 @@ export default {
   methods: {
     ...mapMutations('app', ['setDrawer', 'toggleDrawer']),
     onResponsiveInverted () {
-      if (window.innerWidth < 991) {
-        this.responsive = true
-      } else {
-        this.responsive = false
-      }
+      this.responsive = window.innerWidth < 991;
     }
   }
 }

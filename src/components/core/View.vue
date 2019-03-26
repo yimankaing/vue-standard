@@ -2,21 +2,42 @@
   <v-content>
     <div id="core-view">
       <v-fade-transition mode="out-in">
-        <router-view />
+        <router-view/>
       </v-fade-transition>
     </div>
-    <core-footer v-if="$route.name !== 'Maps'" />
+    <core-footer/>
   </v-content>
 </template>
 
 <script>
 export default {
-  metaInfo () {
+  // data() {
+  //   return {
+  //     items: [
+  //       {
+  //         text: "Dashboard",
+  //         disabled: false,
+  //         href: "breadcrumbs_dashboard"
+  //       },
+  //       {
+  //         text: "Link 1",
+  //         disabled: false,
+  //         href: "breadcrumbs_link_1"
+  //       },
+  //       {
+  //         text: "Link 2",
+  //         disabled: true,
+  //         href: "breadcrumbs_link_2"
+  //       }
+  //     ]
+  //   };
+  // },
+  metaInfo() {
     return {
-      title: 'Vuetify Material Dashboard by CreativeTim'
-    }
+      title: "E-learning"
+    };
   }
-}
+};
 </script>
 
 <style>

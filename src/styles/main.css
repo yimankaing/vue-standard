@@ -1,0 +1,68 @@
+.kh-regular {
+  font-family: Mef1, "Khmer MEF1" !important;
+}
+
+.kh-bold {
+  font-family: Mef2, "Khmer MEF2" !important;
+}
+
+.kh-muol-light {
+  font-family: "kh-muol-light" !important;
+}
+
+/* .test-font {
+  font-family: "Kantumruy" !important;
+} */
+
+.table-action-button {
+  width: 28px !important;
+  height: 29px !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.table-action-button .v-btn__content i {
+  margin-right: 0px !important;
+}
+
+.custom-data-table {
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+}
+.custom-data-table table thead tr th {
+  background-color: #eeeeee;
+}
+.custom-data-table table thead tr th span {
+  color: #000000 !important;
+  text-align: left !important;
+}
+.custom-data-table table thead tr th,
+tbody tr td {
+  /* padding: 8px 8px 8px 8px !important; */
+  border-right: 1px solid #eeeeee;
+}
+.custom-data-table table thead tr th:last-child,
+tbody tr td:last-child {
+  border-right: 0px;
+}
+
+.dense {
+  padding: 0;
+  margin: 0;
+}
+
+.start {
+  text-align: left;
+}
+
+.end {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.middle {
+  vertical-align: middle;
+}

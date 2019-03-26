@@ -1,19 +1,35 @@
 <template>
   <v-app>
-    <core-filter />
-
-    <core-toolbar />
-
-    <core-drawer />
-
-    <core-view />
+    <core-notification/>
+    <core-loading/>
+    <div v-if="!!currentUser">
+      <core-toolbar/>
+      <core-drawer/>
+      <core-view/>
+    </div>
+    <auth v-else></auth>
   </v-app>
 </template>
 
-<style lang="scss">
-@import '@/styles/index.scss';
+<script>
+import Auth from "./views/Auth/Auth";
+export default {
+  components: { Auth },
+  computed: {
+    currentUser: {
+      get: vm => vm.$store.state.currentUser,
+      set: function(newValue) {
+        return newValue;
+      }
+    }
+  }
+};
+</script>
 
-/* Remove in 1.2 */
+
+<style lang="scss">
+@import "@/styles/index.scss";
+
 .v-datatable thead th.column.sortable i {
   vertical-align: unset;
 }

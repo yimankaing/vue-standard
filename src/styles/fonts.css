@@ -1,0 +1,35 @@
+/*****************
+ * register local fonts
+ https://transfonter.org/
+ ****************/
+@font-face {
+  font-family: "Mef1";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Mef1"),
+    url("../assets/fonts/khmer/KHMERMEF1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mef2";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Mef2"),
+    url("../assets/fonts/khmer/KHMERMEF2.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "kh-muol-light";
+  font-style: normal;
+  font-weight: 400;
+  src: local("kh-muol-light"),
+    url("../assets/fonts/khmer/KhmerOSMuolLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Tacteing";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Tacteng"),
+    url("../assets/fonts/khmer/tacteing.ttf") format("truetype");
+}
